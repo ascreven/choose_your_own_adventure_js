@@ -5,7 +5,7 @@ function adventure() {
   var name = prompt("Please identify yourself - enter 'Leela', 'Fry', 'Amy', or 'Bender'");
 
   console.log("The Professor shuffles into the room. 'Good News Everyone! This weekend is Superbowl MLXXV, and Mars needs 50,000 pizzas delivered!  Who's with me?");
-
+// remember to close quotes
   var q1answer = prompt("Will you join the gang on this mission, " + name + "? Choose 'Y' or 'N'");
 
   if (q1answer === 'Y') {
@@ -22,7 +22,7 @@ function adventure() {
         console.log("Smart move. You stop at the nearest refueling station and the attendant walks up.");
 
         var darkMatter = prompt("''Yo. Dark matter's $750/ton. How much you want?' Enter a number between 1 and 5.");
-
+// extra apostrophe in beginning of prompt on line 24
         darkMatter = parseInt(darkMatter);
         var price = darkMatter * 750;
 
@@ -53,6 +53,7 @@ function adventure() {
       } else if (name == 'Amy') {
         console.log("'Ah-whaaaat? Did I ask a question? Where did I leave my slipper...?' The Professor shuffles away and you are free to go visit your parents on Mars.");
         return "The End. Call adventure() to play again.";
+// Put a prompt to have them answer/replay and a function to restart
       } else {
         console.log("'Oh you have plans? Enjoy your date with that femputer!' Your date stands you up though, too bad.");
         return "The End. Call adventure() to play again.";
